@@ -1,0 +1,36 @@
+function create(props) {
+    {
+        if (element) {
+
+            props.props.recommand.map((currentValue, index) => {
+                const tf = props.props.isRight[index];
+                console.log(currentValue, tf, index);
+
+                if (tf === true) {
+                    const content = document.createTextNode(currentValue);
+                    element.appendChild(content);
+                    //div.innerHTML += currentValue;
+                    ReactDOM.render(
+                        document.createTextNode(currentValue),
+                        document.getElementById('div_textfield')
+                    )
+
+                } else if (tf === false) {
+
+                    let createTag = document.createElement('p');
+                    createTag.setAttribute("class", "span_f");
+                    createTag.setAttribute("id", "span_f");
+                    createTag.innerHTML = currentValue;
+                    element.appendChild(createTag);
+                    ReactDOM.render(
+                        createTag,
+                        document.getElementById('div_textfield')
+                    )
+                }
+
+            })
+        } else {
+            console.log('error')
+        }
+    }
+}

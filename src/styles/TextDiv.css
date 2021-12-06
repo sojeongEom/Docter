@@ -1,0 +1,103 @@
+* {
+    font-family: 'SCDream5' !important;
+  }
+
+  #span_f {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: red;
+      cursor: pointer;
+      position: relative;
+  }
+  
+  #span_f:hover > #arrow_box{
+    display: block;
+  }
+
+  #arrow_box {
+    display: none;
+    position: absolute;
+    width: 100%;
+    padding: 8px;
+    left: 0;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    background: #0077ff;
+    color: #fff;
+    font-size: 14px;
+    z-index: 1;
+  }
+  
+  #arrow_box:after {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -10px;
+    border: 10px solid transparent;
+    border-bottom-color: #0077ff;
+    pointer-events: none;
+    content: " ";
+  }
+
+  #synonym-list {
+    border: 3px solid white;
+    display: block;
+    min-width: 120;
+    max-width: 200;
+    background-color: white;
+    border-bottom-right-radius: 5;
+    border-bottom-left-radius: 5;
+    border-top-right-radius: 5;
+    border-top-left-radius: 5;
+  }
+
+  #synonym-list:after {
+    display: none;
+    position: absolute;
+    border: 3px solid white;
+    display: block;
+    min-width: 120;
+    max-width: 200;
+    background-color: white;
+    border-bottom-right-radius: 5;
+    border-bottom-left-radius: 5;
+    border-top-right-radius: 5;
+    border-top-left-radius: 5;
+  }
+
+  #nextword-list {
+    border: 3px solid white;
+    display: block;
+    min-width: 120;
+    max-width: 200;
+    background-color: white;
+    border-bottom-right-radius: 5;
+    border-bottom-left-radius: 5;
+    border-top-right-radius: 5;
+    border-top-left-radius: 5;
+  }
+
+  #nextword-list:after {
+    display: none;
+    position: absolute;
+    border: 3px solid white;
+    display: block;
+    min-width: 120;
+    max-width: 200;
+    background-color: white;
+    border-bottom-right-radius: 5;
+    border-bottom-left-radius: 5;
+    border-top-right-radius: 5;
+    border-top-left-radius: 5;
+  }
+
+  #div_textfield {
+    min-height: 500px;
+  }
+
+  #pad_div {
+    min-height: 20px;
+  }
